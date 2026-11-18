@@ -1,0 +1,15 @@
+# Sample task file for Task Master
+
+task report
+run echo report
+run wc -l examples/sample.tasks
+end
+
+task build
+run g++ -std=c++20 main.cpp -o app
+run ./app
+end
+
+task cleanup
+run rm app
+end
